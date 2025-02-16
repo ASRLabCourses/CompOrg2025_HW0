@@ -1,3 +1,4 @@
+#ifdef __riscv
 #include <stdint.h>
 #include <stdio.h>
 
@@ -30,3 +31,6 @@ int main()
     PRINT_ARR(p_b);
     PRINT_ARR(p_c);
 }
+#else
+#error Please make sure you are compiling with riscv64-unknown-linux-gnu-gcc, abort.
+#endif
