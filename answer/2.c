@@ -3,7 +3,7 @@ int main()
 {
     int a[10] = {0}, b[10] = {0}, c[10] = {0};
     int i, arr_size = 10;
-    FILE *input = fopen("../input/2.txt", "r");
+    FILE *input = fopen("../testcases/input/2.txt", "r");
     for (i = 0; i < arr_size; i++)
         fscanf(input, "%d", &a[i]);
     for (i = 0; i < arr_size; i++)

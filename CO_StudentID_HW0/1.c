@@ -4,7 +4,7 @@
 int main()
 {
     int a, b;
-    FILE *input = fopen("../input/1.txt", "r");
+    FILE *input = fopen("../testcases/input/1.txt", "r");
     fscanf(input, "%d %d", &a, &b);
     fclose(input);
     asm volatile(/*Your code*/);
