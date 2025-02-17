@@ -11,17 +11,17 @@ int main()
     for (i = 0; i < arr_size; i++)
         fscanf(input, "%d", &b[i]);
     fclose(input);
-    int32_t *p_a = &a[0];
-    int32_t *p_b = &b[0];
-    int32_t *p_c = &c[0];
+    int32_t *p_a = a;
+    int32_t *p_b = b;
+    int32_t *p_c = c;
     /* Original C code segment
     for (int32_t i = 0; i < arr_size; i++){
     *p_c++ = *p_a++ - *p_b++;
     }
     */
-    for (int32_t i = 0; i < arr_size; i++)
-        asm volatile(/* Your Code */);
-    p_c = &c[0];
+    asm volatile(/* Your Code */);
+
+    p_c = c;
     for (int32_t i = 0; i < arr_size; i++)
         printf("%d ", *p_c++);
     printf("\n");
