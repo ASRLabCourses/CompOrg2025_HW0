@@ -5,9 +5,9 @@ v := 0
 
 all: $(TARGET)
 
-1: 1.c
+1: arith.c
 	$(CC) $(CFLAGS) -o $@ $^
-2: 2.c
+2: array_arith.c
 	$(CC) $(CFLAGS) -o $@ $^
 
 	
