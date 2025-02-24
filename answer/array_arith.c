@@ -15,9 +15,8 @@ int main()
     int32_t *p_b = b;
     int32_t *p_c = c;
     /* Original C code segment
-    for (int32_t i = 0; i < arr_size; i++){
-    *p_c++ = *p_a++ - *p_b++;
-    }
+    for (int32_t i = arr_size; i != 0; i--)
+        *p_c++ = *p_a++ - *p_b++;
     */
     asm volatile("add  t0, %[cnt], x0 \n\t" /* t0 = arr_size */
                  "loop:               \n\t"
