@@ -33,7 +33,7 @@ Navigate to `rv_toolchain_test` and run the test suite:
 $ cd CompOrg2025_HW0/rv_toolchain_test
 $ make all 
 ```
-This output should resemble following:
+The output should resemble following:
 ```text
 make: [Makefile:24: clean] Error 1 (ignored)
 riscv64-unknown-linux-gnu-gcc -static -march=rv64gcv -o hello hello.c
